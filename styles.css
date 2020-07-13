@@ -1,0 +1,52 @@
+h1 {
+  padding-top: 150px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+div {
+  font-weight: bold;
+}
+
+.container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-area {
+  display: grid;
+  width: 300px;
+  height: 300px;
+  grid-template-columns: auto auto auto;
+}
+.block {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  transition: background 0.2s ease-in-out;
+}
+
+.block:hover {
+  cursor: pointer;
+  background: darkgray;
+}
+
+.rotate {
+  transition: transform 2.5s; 
+  transform: rotate(360deg);
+}
